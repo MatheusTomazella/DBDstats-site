@@ -1,0 +1,123 @@
+body#body{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+form.search{
+    margin-left: 45%;
+}
+
+hr{
+    background-color: gray;
+}
+
+img.logo{
+    height: 2.5rem;
+}
+span.logo{
+    color: lightgray;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+section.user{
+    border: lightgray 1px solid;
+    border-radius: 0.5rem;
+    width: 80%;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-self: space-between;
+}
+
+section.home{
+    margin: auto;
+    margin-top: 10rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+img.home-logo{
+    margin: auto;
+}
+
+div.rank{
+    display: flex;
+    flex-direction: row;
+}
+label.rank{
+    font-size: 3rem;
+}
+div.rank-div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+label.user{
+    margin: auto;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+section.body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+section.login{
+    margin-top: 15%;
+    border: white 1px solid;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+input.login{
+
+}
+
+div.tittle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+label.tittle{
+    color: white;
+    font-size: 2rem;
+}
+
+label.name{
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+
+button.submit{
+    margin-left: 33%;
+    color: white;
+    font-size: 1.2rem;
+    background-color: black;
+    border: white 1px solid;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 1rem;
+}
+
+img.login-icon{
+    width: 4rem;
+}
+
+div.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

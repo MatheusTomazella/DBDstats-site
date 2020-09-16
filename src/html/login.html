@@ -9,6 +9,8 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="./../css/style.css">
+        <!-- JavaScript -->
+        <script src="../js/script.js"></script>
         <!-- Favicon -->
         <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
@@ -25,37 +27,25 @@
     </head>
 
     <body class="container col-12 m-0 p-0" id="body">
-
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <a class="navbar-brand" href="#"><img class="logo" src="./../icon/favicon-32x32.png"> <span class="logo">DBDstats</span> </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mt-2 mt-lg-0">
-                    <a class="nav-link" href="/user">Profile</a>
-                </ul>
-                <form class="form-inline search my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/matheustomazella/DBDstats-api"><i class=" fab fa-github icon "></i> GitHub — API</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/matheustomazella/DBDstats-site"><i class=" fab fa-github icon "></i> GitHub — Site</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <hr class="my-0 col-12 p-0">
     
-        <section class="home">
-            <img class="home-logo" src="../icon/ms-icon-144x144.png"> <br>
-            Keep track of your Dead By Daylight matches.
+        <section class="body">
+            <section class="login">
+                <div class="tittle">
+                    <img class="login-icon" src="../icon/favicon-96x96.png">
+                    <label class="tittle">LOGIN</label>
+                </div>
+                <form class="login">
+                    <div class="name">
+                        <label class="name">Name:</label>
+                        <input class="login name" type="text" id="name">
+                    </div>
+                    <div class="name">
+                        <label class="name">Password:</label>
+                        <input class="login name" type="text" id="password">
+                    </div>
+                    <button type="button" class="submit" onclick="">Login</button>
+                </form>
+            </section>
         </section>
 
 
@@ -65,8 +55,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <!-- Bootstrap Js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-
-        <script src="../js/script.js"></script>
 
     </body>
 </html>
