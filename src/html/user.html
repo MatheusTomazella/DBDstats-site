@@ -40,8 +40,8 @@
                     <a class="nav-link" href="#">Profile</a>
                 </ul>
                 <form class="form-inline search my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" id="search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="button" onclick="searchUser()">Search</button>
                 </form>
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item">
@@ -58,8 +58,8 @@
         <section class="user">
             <label class="user" id="name">UNDEFINED</label>
             <div class="rank">
-                <div class="rank-div"><label class="rank-label">Survivor</label><label class="rank">20</label></div>
-                <div class="rank-div"><label class="rank-label">Killer</label><label class="rank">20</label></div>
+                <div class="rank-div"><label class="rank-label">Survivor</label><label class="rank" id="survivor_rank">20</label></div>
+                <div class="rank-div"><label class="rank-label">Killer</label><label class="rank" id="killer_rank">20</label></div>
             </div>
         </section>
 
@@ -69,6 +69,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <!-- Bootstrap Js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+        <script>
+            const query = getElements( window.location.search, '&' );
+            console.log(query)
+            loadUserPage( query.id, query.name );
+        </script>
 
     </body>
 </html>

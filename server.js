@@ -24,9 +24,9 @@ app.listen( serverPort );
 function getUserCookies (request) {
     var cookies = {};
     if ( request.headers.cookie == undefined ) return undefined;
-    request.headers && request.headers.cookie.split(';').forEach(function(cookie) {
+    request.headers && request.headers.cookie.split(',').forEach(function(cookie) {
       var parts = cookie.match(/(.*?)=(.*)$/)
       cookies[ parts[1].trim() ] = (parts[2] || '').trim();
     });
-    return cookies['user'];
-  };
+    return cookies['user_id'];
+}
