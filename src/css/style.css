@@ -25,7 +25,7 @@ span.logo{
 section.user{
     border: lightgray 1px solid;
     border-radius: 0.5rem;
-    width: 80%;
+    width: 90%;
     padding: 2rem;
     margin: auto;
     margin-top: 3rem;
@@ -76,7 +76,7 @@ section.login{
     margin-top: 15%;
     border: white 1px solid;
     border-radius: 0.5rem;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 3rem 0rem 3rem;
 }
 
 input.login{
@@ -120,4 +120,30 @@ div.name{
     justify-content: space-between;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+a.signup{
+    color: white;
+    position: relative;
+    top: 1.5rem;
+}
+
+section.matches{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+div.matches{
+    /*border: white 1px solid;
+    border-radius: 0.5rem;
+    padding: 1rem;*/
+}
+
+div.match{
+    border: white 1px solid;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 100%;
 }
