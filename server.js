@@ -1,4 +1,3 @@
-const { response } = require('express');
 const express = require( 'express' );
 const app = express();
 const { serverPort } = require( './config/SERVERconfig.json' )

@@ -3,15 +3,17 @@ const SITEurl = 'http://localhost:3306/'
 
 function loadUserPage( id, name, profile ){
     if ( profile == 'true' || profile == true ){
-        const cookies = getElements( document.cookie.substring(10), ';' );
+        const cookies = getElements( document.cookie, ';' );
+        if ( cookies == undefined ) window.location.href = `${SITEurl}login`
         name = cookies.user_name;
         if ( name == undefined ) window.location.href = `${SITEurl}login`
     }
     const userInfo = getRequest( APIurl, 'user', `name=${name}` )[0];
     if ( userInfo.name == undefined ) window.location.href = `${SITEurl}login`;
-    document.getElementById( 'name' ).innerText = userInfo.name;
-    document.getElementById( 'killer_rank' ).innerText = userInfo.killer_rank;
-    document.getElementById( 'survivor_rank' ).innerText = userInfo.survivor_rank;
+    document.getElementById( 'name' ).innerText             = userInfo.name;
+    document.getElementById( 'killer_rank' ).innerText      = userInfo.killer_rank;
+    document.getElementById( 'survivor_rank' ).innerText    = userInfo.survivor_rank;
+    document.getElementById( 'id' ).innerText               = '#'+userInfo.id;
     loadUserMatches( id, name );
 }
 
@@ -96,6 +98,7 @@ function searchUser( ){
 }
 
 function getElements ( string, split ) {
+    if ( string == undefined ) return;
     var cookies = {};
     if ( split == ',' ) string = string.substring(1)
     if ( string == undefined || string == '' ) return undefined;

@@ -56,7 +56,10 @@
         <hr class="my-0 col-12 p-0">
     
         <section class="user">
-            <label class="user" id="name">UNDEFINED</label>
+            <div class="user">
+                <label class="user" id="name">UNDEFINED</label>
+                <label class="id" id="id">#undefined</label>
+            </div>
             <div class="rank">
                 <div class="rank-div"><label class="rank-label">Survivor</label><label class="rank" id="survivor_rank">20</label></div>
                 <div class="rank-div"><label class="rank-label">Killer</label><label class="rank" id="killer_rank">20</label></div>
@@ -64,9 +67,14 @@
         </section>
 
         <section class="matches">
-            <div class="matches killer_matches">
+            <div class="matches killer_matches col-5">
                 <div class="match">
-                    <label class="match">[ Killer ]</label>
+                    <a class="match-collapse-component" data-toggle="collapse" href="#2020-05-25:00:00:00" role="button" aria-expanded="false">
+                        <label class="match character">[ KILLER ]</label>
+                    </a>
+                </div>
+                <div class="collapse match-info" id="2020-05-25:00:00:00">
+                    <label class="">Item:   </label>
                 </div>
             </div>
         </section>

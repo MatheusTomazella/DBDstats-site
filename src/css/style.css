@@ -22,18 +22,6 @@ span.logo{
     font-size: 1.5rem;
 }
 
-section.user{
-    border: lightgray 1px solid;
-    border-radius: 0.5rem;
-    width: 90%;
-    padding: 2rem;
-    margin: auto;
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-self: space-between;
-}
-
 section.home{
     margin: auto;
     margin-top: 10rem;
@@ -47,6 +35,17 @@ img.home-logo{
     margin: auto;
 }
 
+section.user{
+    border: lightgray 1px solid;
+    border-radius: 0.5rem;
+    width: 90%;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 div.rank{
     display: flex;
     flex-direction: row;
@@ -59,10 +58,21 @@ div.rank-div{
     flex-direction: column;
     margin-left: 2rem;
 }
+div.user{
+    display: flex;
+    flex-direction: row;
+}
 label.user{
     margin: auto;
     margin-left: 2rem;
     font-size: 2rem;
+}
+label.id{
+    display: flex;
+    color: gray;
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
 }
 
 section.body{
@@ -77,10 +87,6 @@ section.login{
     border: white 1px solid;
     border-radius: 0.5rem;
     padding: 1rem 3rem 0rem 3rem;
-}
-
-input.login{
-
 }
 
 div.tittle{
@@ -143,7 +149,27 @@ div.matches{
 
 div.match{
     border: white 1px solid;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     padding: 1rem;
     width: 100%;
+}
+div.match-info{
+    padding: 2rem;
+    width: 100%;
+}
+
+div.win {
+    border-color: rgb(132, 255, 132);
+}
+
+label.character{
+    font-size: 2rem;
+}
+
+a.match-collapse-component{
+    color: white;
+    text-decoration: none;
+}
+a.match-collapse-component:hover{
+    color: white;
 }
